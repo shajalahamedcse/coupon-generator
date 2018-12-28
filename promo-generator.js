@@ -20,7 +20,7 @@ function generateOne(options){
     let prefix = options.prefix || '' ;
     let suffix = options.suffix || '' ;
     let useLetters = options.useLetters || true ;
-    let useNumbers = options.useNumbers || false ;
+    let useNumbers = options.useNumbers || true ;
     let useMixedCase = options.useMixedCase || false;
 
     const numbers = "0123456789" ;
@@ -44,10 +44,8 @@ function generateOne(options){
 
 
     for(let index = 0; index < length; index++){
-        console.log(randomInteger(0,characters.length));
         code += randomElement(characters);
     }
-    console.log(code);
     
     return prefix+code+suffix;
 }
@@ -70,9 +68,10 @@ function generateCoupons(config){
     return Object.keys(codes);
 }
 
-const config = {length: 3};
-generateOne(config);
-
+console.log(generateCoupons({
+    length: 7,
+    count: 10
+}))
 module.exports  = {
     generateCoupons: generateCoupons
 }

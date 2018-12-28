@@ -1,11 +1,28 @@
 {
-  "name": "coupon",
+  "name": "promo-generator",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Coupon Code Generator",
+  "main": "promo-generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "shajalahamedcse@gmail.com",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shajalahamedcse/coupon-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/shajalahamedcse/coupon-generator/issue",
+    "email": "shajalahamedcse@gmail.com"
+  },
+  "keywords": [
+    "promo codes",
+    "loyalty coupons",
+    "gift vouchers",
+    "referral links"
+  ],
+  "devDependencies": {
+    "mocha": "5.2.0"
+  },
+  "author": "Shajal Ahamed",
+  "license": "MIT"
 }
