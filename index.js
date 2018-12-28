@@ -48,6 +48,7 @@ function generateOne(options){
         code += randomElement(characters);
     }
     console.log(code);
+    
     return prefix+code+suffix;
 }
 
